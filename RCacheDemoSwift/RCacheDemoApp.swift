@@ -11,6 +11,7 @@ import SwiftUI
 struct RCacheDemoApp: App {
     
     @ObservedObject var router = Router()
+    @StateObject var keyViewModel = KeyViewModel()
     
     var body: some Scene {
         WindowGroup {
@@ -21,6 +22,7 @@ struct RCacheDemoApp: App {
                     }
             }
             .environmentObject(router)
+            .environmentObject(keyViewModel)
         }
     }
 }
