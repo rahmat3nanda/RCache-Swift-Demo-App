@@ -17,6 +17,7 @@
 		AFF7CE832C7CA85F00AC12A1 /* RCache in Frameworks */ = {isa = PBXBuildFile; productRef = AFF7CE822C7CA85F00AC12A1 /* RCache */; };
 		AFF7CE852C7CA88A00AC12A1 /* RCache+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE842C7CA88A00AC12A1 /* RCache+Key.swift */; };
 		AFF7CE882C7CAB8A00AC12A1 /* KeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE872C7CAB8A00AC12A1 /* KeyModel.swift */; };
+		AFF7CE8B2C7CABDD00AC12A1 /* KeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE8A2C7CABDD00AC12A1 /* KeyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		AFF7CE7E2C7CA25100AC12A1 /* KeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyView.swift; sourceTree = "<group>"; };
 		AFF7CE842C7CA88A00AC12A1 /* RCache+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RCache+Key.swift"; sourceTree = "<group>"; };
 		AFF7CE872C7CAB8A00AC12A1 /* KeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyModel.swift; sourceTree = "<group>"; };
+		AFF7CE8A2C7CABDD00AC12A1 /* KeyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +74,12 @@
 		AFF7CE6B2C7C886600AC12A1 /* RCacheDemoSwift */ = {
 			isa = PBXGroup;
 			children = (
-				AFF7CE862C7CAB8000AC12A1 /* Model */,
+				AFF7CE862C7CAB8000AC12A1 /* Models */,
+				AFF7CE802C7CA2B600AC12A1 /* Views */,
+				AFF7CE892C7CABC000AC12A1 /* ViewModels */,
 				AFF7CE692C7C886600AC12A1 /* RCacheDemoApp.swift */,
 				AFF7CE702C7C918700AC12A1 /* Router.swift */,
 				AFF7CE842C7CA88A00AC12A1 /* RCache+Key.swift */,
-				AFF7CE802C7CA2B600AC12A1 /* Views */,
 				AFF7CE6A2C7C886600AC12A1 /* RCacheDemoSwift.entitlements */,
 				AFF7CE672C7C886600AC12A1 /* Assets.xcassets */,
 				AFF7CE662C7C886600AC12A1 /* Preview Content */,
@@ -94,12 +97,20 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		AFF7CE862C7CAB8000AC12A1 /* Model */ = {
+		AFF7CE862C7CAB8000AC12A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				AFF7CE872C7CAB8A00AC12A1 /* KeyModel.swift */,
 			);
-			path = Model;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFF7CE892C7CABC000AC12A1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AFF7CE8A2C7CABDD00AC12A1 /* KeyViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 			files = (
 				AFF7CE6F2C7C886700AC12A1 /* RCacheDemoApp.swift in Sources */,
 				AFF7CE852C7CA88A00AC12A1 /* RCache+Key.swift in Sources */,
+				AFF7CE8B2C7CABDD00AC12A1 /* KeyViewModel.swift in Sources */,
 				AFF7CE882C7CAB8A00AC12A1 /* KeyModel.swift in Sources */,
 				AFF7CE7F2C7CA25100AC12A1 /* KeyView.swift in Sources */,
 				AFF7CE712C7C918700AC12A1 /* Router.swift in Sources */,
