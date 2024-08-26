@@ -23,7 +23,7 @@ struct FloatingMenuView<Content: View>: View {
                 Color.black.opacity(0.5)
                     .ignoresSafeArea()
                     .onTapGesture {
-                        withAnimation {
+                        withAnimation(.easeInOut(duration: 0.2)) {
                             isMenuOpen.toggle()
                         }
                     }
@@ -46,7 +46,7 @@ struct FloatingMenuView<Content: View>: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        withAnimation {
+                        withAnimation(.easeInOut(duration: 0.2)) {
                             isMenuOpen.toggle()
                         }
                     }) {
