@@ -60,13 +60,21 @@
 		AFF7CE6B2C7C886600AC12A1 /* RCacheDemoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AFF7CE802C7CA2B600AC12A1 /* Views */,
 				AFF7CE692C7C886600AC12A1 /* RCacheDemoApp.swift */,
-				AFF7CE682C7C886600AC12A1 /* HomeView.swift */,
 				AFF7CE6A2C7C886600AC12A1 /* RCacheDemoSwift.entitlements */,
 				AFF7CE672C7C886600AC12A1 /* Assets.xcassets */,
 				AFF7CE662C7C886600AC12A1 /* Preview Content */,
 			);
 			path = RCacheDemoSwift;
+			sourceTree = "<group>";
+		};
+		AFF7CE802C7CA2B600AC12A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFF7CE682C7C886600AC12A1 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
