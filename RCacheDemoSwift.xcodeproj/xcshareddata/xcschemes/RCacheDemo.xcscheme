@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AFF7CE522C7C864B00AC12A1"
-               BuildableName = "RCacheDemoSwift.app"
+               BuildableName = "RCache Demo.app"
                BlueprintName = "RCacheDemoSwift"
                ReferencedContainer = "container:RCacheDemoSwift.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AFF7CE522C7C864B00AC12A1"
-            BuildableName = "RCacheDemoSwift.app"
+            BuildableName = "RCache Demo.app"
             BlueprintName = "RCacheDemoSwift"
             ReferencedContainer = "container:RCacheDemoSwift.xcodeproj">
          </BuildableReference>
