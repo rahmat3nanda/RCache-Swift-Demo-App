@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct RCacheDemoApp: App {
+    
+    @ObservedObject var router = Router()
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            NavigationStack(path: $router.navPath) {
+                HomeView()
+                    .navigationDestination(for: Router.Destination.self) { destination in
+                        destination.view()
+                    }
+            }
+            .environmentObject(router)
         }
     }
 }
