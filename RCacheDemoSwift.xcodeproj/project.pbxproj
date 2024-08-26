@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFF7CE572C7C864B00AC12A1 /* RCache_Demo_SwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE562C7C864B00AC12A1 /* RCache_Demo_SwiftApp.swift */; };
+		AFF7CE572C7C864B00AC12A1 /* RCacheDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE562C7C864B00AC12A1 /* RCacheDemoApp.swift */; };
 		AFF7CE592C7C864B00AC12A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE582C7C864B00AC12A1 /* ContentView.swift */; };
 		AFF7CE5B2C7C864C00AC12A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF7CE5A2C7C864C00AC12A1 /* Assets.xcassets */; };
 		AFF7CE5F2C7C864C00AC12A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF7CE5E2C7C864C00AC12A1 /* Preview Assets.xcassets */; };
@@ -15,10 +15,10 @@
 
 /* Begin PBXFileReference section */
 		AFF7CE532C7C864B00AC12A1 /* RCache Demo Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RCache Demo Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFF7CE562C7C864B00AC12A1 /* RCache_Demo_SwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCache_Demo_SwiftApp.swift; sourceTree = "<group>"; };
+		AFF7CE562C7C864B00AC12A1 /* RCacheDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCacheDemoApp.swift; sourceTree = "<group>"; };
 		AFF7CE582C7C864B00AC12A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AFF7CE5A2C7C864C00AC12A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AFF7CE5C2C7C864C00AC12A1 /* RCache_Demo_Swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RCache_Demo_Swift.entitlements; sourceTree = "<group>"; };
+		AFF7CE5C2C7C864C00AC12A1 /* RCacheDemoSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RCacheDemoSwift.entitlements; sourceTree = "<group>"; };
 		AFF7CE5E2C7C864C00AC12A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,10 +52,10 @@
 		AFF7CE552C7C864B00AC12A1 /* RCache Demo Swift */ = {
 			isa = PBXGroup;
 			children = (
-				AFF7CE562C7C864B00AC12A1 /* RCache_Demo_SwiftApp.swift */,
+				AFF7CE562C7C864B00AC12A1 /* RCacheDemoApp.swift */,
 				AFF7CE582C7C864B00AC12A1 /* ContentView.swift */,
 				AFF7CE5A2C7C864C00AC12A1 /* Assets.xcassets */,
-				AFF7CE5C2C7C864C00AC12A1 /* RCache_Demo_Swift.entitlements */,
+				AFF7CE5C2C7C864C00AC12A1 /* RCacheDemoSwift.entitlements */,
 				AFF7CE5D2C7C864C00AC12A1 /* Preview Content */,
 			);
 			path = "RCache Demo Swift";
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF7CE592C7C864B00AC12A1 /* ContentView.swift in Sources */,
-				AFF7CE572C7C864B00AC12A1 /* RCache_Demo_SwiftApp.swift in Sources */,
+				AFF7CE572C7C864B00AC12A1 /* RCacheDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +289,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "id.nesd.RCache-Demo-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = id.nesd.rcache.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -327,7 +327,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "id.nesd.RCache-Demo-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = id.nesd.rcache.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
