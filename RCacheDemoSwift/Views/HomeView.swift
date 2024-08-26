@@ -14,7 +14,7 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             VStack(content: {
-                Text("Placeholder")
+                Text("RCache")
             })
             FloatingMenuView {
                 Button(action: {
