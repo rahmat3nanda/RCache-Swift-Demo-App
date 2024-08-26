@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
-//  RCache Demo Swift
+//  HomeView.swift
+//  RCacheDemoSwift
 //
 //  Created by Rahmat Trinanda Pramudya Amar on 26/08/24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    HomeView()
 }
