@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFF7CE572C7C864B00AC12A1 /* RCacheDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE562C7C864B00AC12A1 /* RCacheDemoApp.swift */; };
-		AFF7CE592C7C864B00AC12A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE582C7C864B00AC12A1 /* ContentView.swift */; };
-		AFF7CE5B2C7C864C00AC12A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF7CE5A2C7C864C00AC12A1 /* Assets.xcassets */; };
-		AFF7CE5F2C7C864C00AC12A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF7CE5E2C7C864C00AC12A1 /* Preview Assets.xcassets */; };
+		AFF7CE6C2C7C886700AC12A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF7CE652C7C886600AC12A1 /* Preview Assets.xcassets */; };
+		AFF7CE6D2C7C886700AC12A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF7CE672C7C886600AC12A1 /* Assets.xcassets */; };
+		AFF7CE6E2C7C886700AC12A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE682C7C886600AC12A1 /* ContentView.swift */; };
+		AFF7CE6F2C7C886700AC12A1 /* RCacheDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE692C7C886600AC12A1 /* RCacheDemoApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AFF7CE532C7C864B00AC12A1 /* RCache Demo Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RCache Demo Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFF7CE562C7C864B00AC12A1 /* RCacheDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCacheDemoApp.swift; sourceTree = "<group>"; };
-		AFF7CE582C7C864B00AC12A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AFF7CE5A2C7C864C00AC12A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AFF7CE5C2C7C864C00AC12A1 /* RCacheDemoSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RCacheDemoSwift.entitlements; sourceTree = "<group>"; };
-		AFF7CE5E2C7C864C00AC12A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFF7CE652C7C886600AC12A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFF7CE672C7C886600AC12A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFF7CE682C7C886600AC12A1 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFF7CE692C7C886600AC12A1 /* RCacheDemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCacheDemoApp.swift; sourceTree = "<group>"; };
+		AFF7CE6A2C7C886600AC12A1 /* RCacheDemoSwift.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = RCacheDemoSwift.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 		AFF7CE4A2C7C864B00AC12A1 = {
 			isa = PBXGroup;
 			children = (
-				AFF7CE552C7C864B00AC12A1 /* RCache Demo Swift */,
+				AFF7CE6B2C7C886600AC12A1 /* RCacheDemoSwift */,
 				AFF7CE542C7C864B00AC12A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,24 +49,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AFF7CE552C7C864B00AC12A1 /* RCache Demo Swift */ = {
+		AFF7CE662C7C886600AC12A1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				AFF7CE562C7C864B00AC12A1 /* RCacheDemoApp.swift */,
-				AFF7CE582C7C864B00AC12A1 /* ContentView.swift */,
-				AFF7CE5A2C7C864C00AC12A1 /* Assets.xcassets */,
-				AFF7CE5C2C7C864C00AC12A1 /* RCacheDemoSwift.entitlements */,
-				AFF7CE5D2C7C864C00AC12A1 /* Preview Content */,
-			);
-			path = "RCache Demo Swift";
-			sourceTree = "<group>";
-		};
-		AFF7CE5D2C7C864C00AC12A1 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				AFF7CE5E2C7C864C00AC12A1 /* Preview Assets.xcassets */,
+				AFF7CE652C7C886600AC12A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFF7CE6B2C7C886600AC12A1 /* RCacheDemoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				AFF7CE692C7C886600AC12A1 /* RCacheDemoApp.swift */,
+				AFF7CE682C7C886600AC12A1 /* ContentView.swift */,
+				AFF7CE6A2C7C886600AC12A1 /* RCacheDemoSwift.entitlements */,
+				AFF7CE672C7C886600AC12A1 /* Assets.xcassets */,
+				AFF7CE662C7C886600AC12A1 /* Preview Content */,
+			);
+			path = RCacheDemoSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AFF7CE4E2C7C864B00AC12A1 /* Build configuration list for PBXProject "RCache Demo Swift" */;
+			buildConfigurationList = AFF7CE4E2C7C864B00AC12A1 /* Build configuration list for PBXProject "RCacheDemoSwift" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,8 +127,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFF7CE5F2C7C864C00AC12A1 /* Preview Assets.xcassets in Resources */,
-				AFF7CE5B2C7C864C00AC12A1 /* Assets.xcassets in Resources */,
+				AFF7CE6C2C7C886700AC12A1 /* Preview Assets.xcassets in Resources */,
+				AFF7CE6D2C7C886700AC12A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFF7CE592C7C864B00AC12A1 /* ContentView.swift in Sources */,
-				AFF7CE572C7C864B00AC12A1 /* RCacheDemoApp.swift in Sources */,
+				AFF7CE6F2C7C886700AC12A1 /* RCacheDemoApp.swift in Sources */,
+				AFF7CE6E2C7C886700AC12A1 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +340,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFF7CE4E2C7C864B00AC12A1 /* Build configuration list for PBXProject "RCache Demo Swift" */ = {
+		AFF7CE4E2C7C864B00AC12A1 /* Build configuration list for PBXProject "RCacheDemoSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFF7CE602C7C864C00AC12A1 /* Debug */,
