@@ -14,6 +14,8 @@
 		AFF7CE712C7C918700AC12A1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE702C7C918700AC12A1 /* Router.swift */; };
 		AFF7CE752C7C975A00AC12A1 /* FloatingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE742C7C975A00AC12A1 /* FloatingMenuView.swift */; };
 		AFF7CE7F2C7CA25100AC12A1 /* KeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE7E2C7CA25100AC12A1 /* KeyView.swift */; };
+		AFF7CE832C7CA85F00AC12A1 /* RCache in Frameworks */ = {isa = PBXBuildFile; productRef = AFF7CE822C7CA85F00AC12A1 /* RCache */; };
+		AFF7CE852C7CA88A00AC12A1 /* RCache+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE842C7CA88A00AC12A1 /* RCache+Key.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		AFF7CE702C7C918700AC12A1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		AFF7CE742C7C975A00AC12A1 /* FloatingMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingMenuView.swift; sourceTree = "<group>"; };
 		AFF7CE7E2C7CA25100AC12A1 /* KeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyView.swift; sourceTree = "<group>"; };
+		AFF7CE842C7CA88A00AC12A1 /* RCache+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RCache+Key.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF7CE832C7CA85F00AC12A1 /* RCache in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +72,7 @@
 			children = (
 				AFF7CE692C7C886600AC12A1 /* RCacheDemoApp.swift */,
 				AFF7CE702C7C918700AC12A1 /* Router.swift */,
+				AFF7CE842C7CA88A00AC12A1 /* RCache+Key.swift */,
 				AFF7CE802C7CA2B600AC12A1 /* Views */,
 				AFF7CE6A2C7C886600AC12A1 /* RCacheDemoSwift.entitlements */,
 				AFF7CE672C7C886600AC12A1 /* Assets.xcassets */,
@@ -102,6 +107,9 @@
 			dependencies = (
 			);
 			name = RCacheDemoSwift;
+			packageProductDependencies = (
+				AFF7CE822C7CA85F00AC12A1 /* RCache */,
+			);
 			productName = RCacheDemoSwift;
 			productReference = AFF7CE532C7C864B00AC12A1 /* RCache Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -130,6 +138,9 @@
 				Base,
 			);
 			mainGroup = AFF7CE4A2C7C864B00AC12A1;
+			packageReferences = (
+				AFF7CE812C7CA85F00AC12A1 /* XCRemoteSwiftPackageReference "RCache-Swift" */,
+			);
 			productRefGroup = AFF7CE542C7C864B00AC12A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -157,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF7CE6F2C7C886700AC12A1 /* RCacheDemoApp.swift in Sources */,
+				AFF7CE852C7CA88A00AC12A1 /* RCache+Key.swift in Sources */,
 				AFF7CE7F2C7CA25100AC12A1 /* KeyView.swift in Sources */,
 				AFF7CE712C7C918700AC12A1 /* Router.swift in Sources */,
 				AFF7CE6E2C7C886700AC12A1 /* HomeView.swift in Sources */,
@@ -381,6 +393,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFF7CE812C7CA85F00AC12A1 /* XCRemoteSwiftPackageReference "RCache-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rahmat3nanda/RCache-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFF7CE822C7CA85F00AC12A1 /* RCache */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFF7CE812C7CA85F00AC12A1 /* XCRemoteSwiftPackageReference "RCache-Swift" */;
+			productName = RCache;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AFF7CE4B2C7C864B00AC12A1 /* Project object */;
 }
