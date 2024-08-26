@@ -10,12 +10,11 @@ import SwiftUI
 final class Router: ObservableObject {
     
     public enum Destination: Codable, Hashable {
-        case addKey
+        case key
         
         func view() -> some View {
             switch self {
-            case .addKey:
-                return TestView()
+            case .key: KeyView()
             }
         }
     }

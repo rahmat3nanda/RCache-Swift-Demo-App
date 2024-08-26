@@ -17,9 +17,8 @@ struct HomeView: View {
                 Text("Placeholder")
             })
             FloatingMenuView {
-                
                 Button(action: {
-                    
+                    router.navigate(to: .key)
                 }) {
                     VStack {
                         Image(systemName: "key.fill")
@@ -35,6 +34,8 @@ struct HomeView: View {
                 }
             }
         }
+        .navigationBarTitle("RCache")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
