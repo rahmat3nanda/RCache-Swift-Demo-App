@@ -10,14 +10,16 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject var router: Router
+    @State var isMenuOpen = false
     
     var body: some View {
         ZStack {
             VStack(content: {
                 Text("RCache")
             })
-            FloatingMenuView {
+            FloatingMenuView(isMenuOpen: $isMenuOpen) {
                 Button(action: {
+                    isMenuOpen = false
                     router.navigate(to: .key)
                 }) {
                     VStack {

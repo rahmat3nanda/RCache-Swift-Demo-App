@@ -9,11 +9,11 @@ import SwiftUI
 
 struct FloatingMenuView<Content: View>: View {
     
-    @State var isMenuOpen = false
+    @Binding var isMenuOpen: Bool
     let content: Content
     
-    init(isMenuOpen: Bool = false, @ViewBuilder content: () -> Content) {
-        self.isMenuOpen = isMenuOpen
+    init(isMenuOpen: Binding<Bool> = .constant(false), @ViewBuilder content: () -> Content) {
+        self._isMenuOpen = isMenuOpen
         self.content = content()
     }
     
