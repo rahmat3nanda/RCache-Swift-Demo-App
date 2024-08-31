@@ -67,7 +67,6 @@ struct ToastView: View {
     }
     .padding()
     .frame(minWidth: 0, maxWidth: width)
-    .background(Color("toastBackground"))
     .cornerRadius(8)
     .overlay(
       RoundedRectangle(cornerRadius: 8)
@@ -91,7 +90,7 @@ struct ToastModifier: ViewModifier {
             .offset(y: 32)
         }.animation(.spring(), value: toast)
       )
-      .onChange(of: toast) { value in
+      .onChange(of: toast) { _, __ in
         showToast()
       }
   }
