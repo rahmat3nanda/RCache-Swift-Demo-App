@@ -11,6 +11,6 @@ import RCache
 class RemoveViewModel: ObservableObject {
     func remove(key: KeyModel, storageType: StorageType) {
         storageType.rCache.remove(key: key.rCacheKey)
-        LogManager.instance.add(action: .remove, value: "\n-Key: \(key.name)\n-Storage Type: \(storageType.rawValue))")
+        LogManager.instance.add(action: .remove, value: "\n-Key: \(key.name)\n-Storage Type: \(storageType.rawValue)")
     }
 }

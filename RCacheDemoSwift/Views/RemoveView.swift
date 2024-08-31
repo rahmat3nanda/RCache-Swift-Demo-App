@@ -1,5 +1,5 @@
 //
-//  ReadView.swift
+//  RemoveView.swift
 //  RCacheDemoSwift
 //
 //  Created by Rahmat Trinanda Pramudya Amar on 31/08/24.
@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-struct ReadView: View {
-    
-    @StateObject private var readViewModel = ReadViewModel()
+struct RemoveView: View {
+    @StateObject private var removeViewModel = RemoveViewModel()
     @StateObject private var keyViewModel = KeyViewModel()
     
-    @State private var selectedDataType: DataType = .data
     @State private var selectedKey: KeyModel? = nil
     @State private var selectedStorageType: StorageType = .common
     
     @State private var buttonEnabled: Bool = false
     
+    @State private var toast: Toast? = nil
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack {
             FormHeaderView(
-                dataType: $selectedDataType,
                 key: $selectedKey,
                 storageType: $selectedStorageType,
+                showDataType: false,
                 sourceDataType: DataType.allCases,
                 sourceKey: keyViewModel.items,
                 sourceStorageType: StorageType.allCases,
@@ -32,18 +32,12 @@ struct ReadView: View {
                 storageTypeChanged: check
             )
             
-            Divider()
-            
-            if !readViewModel.result.isEmpty {
-                Text("Result:\n\(readViewModel.result)")
-            }
-            
             Spacer()
             
             Button(action: submit) {
                 HStack {
                     Spacer()
-                    Text("Read")
+                    Text("Remove")
                         .foregroundStyle(.white)
                     Spacer()
                 }
@@ -55,8 +49,9 @@ struct ReadView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
         .padding()
-        .navigationTitle("RCache: Read")
+        .navigationTitle("RCache: Remove")
         .navigationBarTitleDisplayMode(.inline)
+        .toastView(toast: $toast)
         .onAppear(perform: {
             keyViewModel.loadItems()
             selectedKey = keyViewModel.items.first
@@ -68,6 +63,7 @@ struct ReadView: View {
     }
     
     func submit() {
-        readViewModel.load(key: selectedKey!, storageType: selectedStorageType, dataType: selectedDataType)
+        removeViewModel.remove(key: selectedKey!, storageType: selectedStorageType)
+        toast = Toast(style: .info, message: "Success remove variable with key \(selectedKey?.name ?? "") from \(selectedStorageType.rawValue)")
     }
 }
