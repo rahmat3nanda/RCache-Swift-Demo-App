@@ -11,11 +11,13 @@ import RCache
 enum LogActionType: String {
     case remove = "Remove"
     case add = "Add"
+    case read = "Read"
 }
 
 enum LogInputType: String {
     case key = "Key"
     case save = "Save"
+    case read = "Read"
 }
 
 struct LogModel: Codable {

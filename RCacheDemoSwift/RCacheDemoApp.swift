@@ -20,6 +20,7 @@ struct RCacheDemoApp: App {
                         switch destination {
                         case .key: KeyView()
                         case .save: SaveView()
+                        case .read: ReadView()
                         }
                     }
             }

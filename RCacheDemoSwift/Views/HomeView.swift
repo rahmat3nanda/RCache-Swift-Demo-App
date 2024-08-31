@@ -28,13 +28,17 @@ struct HomeView: View {
                 }
             })
             FloatingMenu(isMenuOpen: $isMenuOpen) {
-                ItemMenuView(imageName: "key.fill", title: "Key") {
+                ItemMenuView(imageName: "square.and.arrow.up.fill", title: "Read") {
                     isMenuOpen = false
-                    router.navigate(to: .key)
+                    router.navigate(to: .read)
                 }
                 ItemMenuView(imageName: "square.and.arrow.down.fill", title: "Save") {
                     isMenuOpen = false
                     router.navigate(to: .save)
+                }
+                ItemMenuView(imageName: "key.fill", title: "Key") {
+                    isMenuOpen = false
+                    router.navigate(to: .key)
                 }
             }
         }
