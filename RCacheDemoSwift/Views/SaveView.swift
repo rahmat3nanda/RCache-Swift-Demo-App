@@ -30,6 +30,7 @@ struct SaveView: View {
                 dataType: $selectedDataType,
                 key: $selectedKey,
                 storageType: $selectedStorageType,
+                showAddKey: true,
                 sourceDataType: DataType.allCases,
                 sourceKey: keyViewModel.items,
                 sourceStorageType: StorageType.allCases,

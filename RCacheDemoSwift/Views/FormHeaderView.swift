@@ -12,6 +12,7 @@ struct FormHeaderView: View {
     @Binding var key: KeyModel?
     @Binding var storageType: StorageType
     
+    let showAddKey: Bool
     var sourceDataType: [DataType]
     var sourceKey: [KeyModel]
     var sourceStorageType: [StorageType]
@@ -25,6 +26,7 @@ struct FormHeaderView: View {
         dataType: Binding<DataType>,
         key: Binding<KeyModel?> = .constant(nil),
         storageType: Binding<StorageType>,
+        showAddKey: Bool = false,
         sourceDataType: [DataType],
         sourceKey: [KeyModel],
         sourceStorageType: [StorageType],
@@ -37,6 +39,7 @@ struct FormHeaderView: View {
         self._key = key
         self._storageType = storageType
         
+        self.showAddKey = showAddKey
         self.sourceDataType = sourceDataType
         self.sourceKey = sourceKey
         self.sourceStorageType = sourceStorageType
@@ -71,10 +74,13 @@ struct FormHeaderView: View {
                         Text(item.name).tag(item as KeyModel?)
                     }
                 }
-                Image(systemName: "plus")
-                    .onTapGesture {
-                        didKeyAdd?()
-                    }
+                
+                if showAddKey {
+                    Image(systemName: "plus")
+                        .onTapGesture {
+                            didKeyAdd?()
+                        }
+                }
             }
             .onChange(of: key) { _, __ in
                 keyChanged?()
