@@ -9,20 +9,14 @@ import Foundation
 import RCache
 
 enum LogActionType: String {
-    case remove = "Remove"
-    case add = "Add"
-    case read = "Read"
-}
-
-enum LogInputType: String {
-    case key = "Key"
+    case addKey = "Add Key"
+    case removeKey = "Remove Key"
     case save = "Save"
     case read = "Read"
 }
 
 struct LogModel: Codable {
     let action: String
-    let input: String
     let value: String
     let time: String
 }
@@ -30,13 +24,11 @@ struct LogModel: Codable {
 struct LogIdentifiableModel: Identifiable {
     let id = UUID()
     let action: String
-    let input: String
     let value: String
     let time: String
     
-    init(action: String, input: String, value: String, time: String) {
+    init(action: String, value: String, time: String) {
         self.action = action
-        self.input = input
         self.value = value
         self.time = time
     }
@@ -83,14 +75,13 @@ extension LogManager {
         }
     }
     
-    func add(action: LogActionType, input: LogInputType, value: String) {
+    func add(action: LogActionType, value: String) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         
         localData.append(
             LogModel(
                 action: action.rawValue,
-                input: input.rawValue,
                 value: value,
                 time: dateFormatter.string(from: Date())
             )
@@ -106,6 +97,6 @@ extension LogManager {
 
 extension Array where Element == LogModel {
     func toIdentifible() -> [LogIdentifiableModel] {
-        return self.map({ LogIdentifiableModel(action: $0.action, input: $0.input, value: $0.value, time: $0.time) })
+        return self.map({ LogIdentifiableModel(action: $0.action, value: $0.value, time: $0.time) })
     }
 }

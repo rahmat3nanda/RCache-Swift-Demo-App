@@ -52,7 +52,7 @@ class ReadViewModel: ObservableObject {
     }
     
     private func addToLog(dataType: DataType, key: KeyModel, storageType: StorageType) {
-        LogManager.instance.add(action: .read, input: .read, value: "\n-Data Type: \(dataType.rawValue)\n-Key: \(key.name)\n-Storage Type: \(storageType.rawValue)\n-Value: \(result)")
+        LogManager.instance.add(action: .read, value: "\n-Data Type: \(dataType.rawValue)\n-Key: \(key.name)\n-Storage Type: \(storageType.rawValue)\n-Value: \(result)")
     }
 }
 

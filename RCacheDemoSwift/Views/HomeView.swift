@@ -22,7 +22,7 @@ struct HomeView: View {
                 } else {
                     List {
                         ForEach(logs!.reversed()) { log in
-                            Text("Date: \(log.time)\nAction: \(log.action)\nType: \(log.input)\nValue: \(log.value)")
+                            Text("Date: \(log.time)\nAction: \(log.action)\nValue: \(log.value)")
                         }
                     }
                 }

@@ -69,7 +69,7 @@ class SaveViewModel: ObservableObject {
     }
     
     private func addToLog(dataType: DataType, key: KeyModel, storageType: StorageType, value: String) {
-        LogManager.instance.add(action: .add, input: .save, value: "\n-Data Type: \(dataType.rawValue)\n-Key: \(key.name)\n-Storage Type: \(storageType.rawValue)\n-Value: \(value)")
+        LogManager.instance.add(action: .save, value: "\n-Data Type: \(dataType.rawValue)\n-Key: \(key.name)\n-Storage Type: \(storageType.rawValue)\n-Value: \(value)")
     }
 }
 
