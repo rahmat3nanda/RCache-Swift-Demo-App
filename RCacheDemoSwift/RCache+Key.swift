@@ -8,5 +8,6 @@
 import RCache
 
 extension RCache.Key {
-    static let savedKeys = RCache.Key("savedKeys")
+    static let savedKeys = RCache.Key("id.nesd.rcache.savedKeys")
+    static let logs = RCache.Key("id.nesd.rcache.logs")
 }
