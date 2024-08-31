@@ -25,7 +25,7 @@ struct FormHeaderView: View {
     var storageTypeChanged: (() -> Void)? = nil
     
     init(
-        dataType: Binding<DataType>,
+        dataType: Binding<DataType>? = nil,
         key: Binding<KeyModel?> = .constant(nil),
         storageType: Binding<StorageType>,
         showAddKey: Bool = false,
@@ -38,7 +38,8 @@ struct FormHeaderView: View {
         didKeyAdd: (() -> Void)? = nil,
         storageTypeChanged: (() -> Void)? = nil
     ) {
-        self._dataType = dataType
+        @State var dummyDataType: DataType = .data
+        self._dataType = dataType ?? $dummyDataType
         self._key = key
         self._storageType = storageType
         
