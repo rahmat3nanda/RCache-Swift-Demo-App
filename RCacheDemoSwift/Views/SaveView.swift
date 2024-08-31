@@ -16,7 +16,7 @@ struct SaveView: View {
     
     @State private var selectedDataType: DataType = .data
     @State private var selectedKey: KeyModel? = nil
-    @State private var selectedSaveType: StorageType = .common
+    @State private var selectedStorageType: StorageType = .common
     
     @State private var fieldValue = ""
     
@@ -26,46 +26,24 @@ struct SaveView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack {
-                Text("Data Type:")
-                Spacer()
-                Picker("Data Type", selection: $selectedDataType) {
-                    ForEach(DataType.allCases, id: \.self) { type in
-                        Text(type.rawValue).tag(type)
-                    }
-                }
-                .pickerStyle(.menu)
-            }
-            .onChange(of: selectedDataType) {
-                fieldValue = ""
-                hideKeyboard()
-                check()
-            }
-            
-            HStack(spacing: 12) {
-                Text("Key:")
-                Spacer()
-                Picker("Key", selection: $selectedKey) {
-                    ForEach(keyViewModel.items, id: \.id) { item in
-                        Text(item.name).tag(item as KeyModel?)
-                    }
-                }
-                Image(systemName: "plus").onTapGesture {
+            FormHeaderView(
+                dataType: $selectedDataType,
+                key: $selectedKey,
+                storageType: $selectedStorageType,
+                sourceDataType: DataType.allCases,
+                sourceKey: keyViewModel.items,
+                sourceStorageType: StorageType.allCases,
+                dataTypeChanged: {
+                    fieldValue = ""
+                    hideKeyboard()
+                    check()
+                },
+                keyChanged: check,
+                didKeyAdd: {
                     router.navigate(to: .key)
-                }
-            }
-            .onChange(of: selectedKey, check)
-            
-            HStack {
-                Text("Storage Type:")
-                Spacer()
-                Picker("Storage Type", selection: $selectedSaveType) {
-                    ForEach(StorageType.allCases, id: \.self) { type in
-                        Text(type.rawValue).tag(type)
-                    }
-                }
-            }
-            .onChange(of: selectedSaveType, check)
+                },
+                storageTypeChanged: check
+            )
             
             Divider()
             
@@ -81,7 +59,7 @@ struct SaveView: View {
             
             if selectedDataType.isUseTextField {
                 TextField("Value", text: $fieldValue)
-                    .keyboardType(selectedDataType.isNumber ? .numberPad : .default)
+                    .keyboardType(selectedDataType.isNumber ? .decimalPad : .default)
                     .onChange(of: fieldValue, check)
             }
             
@@ -116,7 +94,7 @@ struct SaveView: View {
     }
     
     func submit() {
-        saveViewModel.save(dataType: selectedDataType, key: selectedKey!, storageType: selectedSaveType, value: fieldValue) { (success, message) in
+        saveViewModel.save(dataType: selectedDataType, key: selectedKey!, storageType: selectedStorageType, value: fieldValue) { (success, message) in
             if success {
                 toast = Toast(style: .success, message: "Success Saving")
                 fieldValue = ""
