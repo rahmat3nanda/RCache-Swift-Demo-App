@@ -13,6 +13,7 @@
 		AFE65FB22C82DC4E00DE023E /* SaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE65FB12C82DC4E00DE023E /* SaveViewModel.swift */; };
 		AFE65FB62C82E3C600DE023E /* SaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE65FB52C82E3C600DE023E /* SaveModel.swift */; };
 		AFE65FB82C82E44200DE023E /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE65FB72C82E44200DE023E /* LogManager.swift */; };
+		AFE65FBA2C82EFA300DE023E /* FormHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE65FB92C82EFA300DE023E /* FormHeaderView.swift */; };
 		AFF7CE6C2C7C886700AC12A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF7CE652C7C886600AC12A1 /* Preview Assets.xcassets */; };
 		AFF7CE6D2C7C886700AC12A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF7CE672C7C886600AC12A1 /* Assets.xcassets */; };
 		AFF7CE6E2C7C886700AC12A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE682C7C886600AC12A1 /* HomeView.swift */; };
@@ -33,6 +34,7 @@
 		AFE65FB12C82DC4E00DE023E /* SaveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewModel.swift; sourceTree = "<group>"; };
 		AFE65FB52C82E3C600DE023E /* SaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveModel.swift; sourceTree = "<group>"; };
 		AFE65FB72C82E44200DE023E /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		AFE65FB92C82EFA300DE023E /* FormHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormHeaderView.swift; sourceTree = "<group>"; };
 		AFF7CE532C7C864B00AC12A1 /* RCache Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RCache Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF7CE652C7C886600AC12A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFF7CE672C7C886600AC12A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				AFF7CE682C7C886600AC12A1 /* HomeView.swift */,
 				AFF7CE7E2C7CA25100AC12A1 /* KeyView.swift */,
 				AFE65F682C7DACFD00DE023E /* SaveView.swift */,
+				AFE65FB92C82EFA300DE023E /* FormHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				AFE65F692C7DACFD00DE023E /* SaveView.swift in Sources */,
 				AFF7CE6E2C7C886700AC12A1 /* HomeView.swift in Sources */,
 				AFF7CE752C7C975A00AC12A1 /* FloatingMenu.swift in Sources */,
+				AFE65FBA2C82EFA300DE023E /* FormHeaderView.swift in Sources */,
 				AFE65FB82C82E44200DE023E /* LogManager.swift in Sources */,
 				AFE65FB62C82E3C600DE023E /* SaveModel.swift in Sources */,
 			);
