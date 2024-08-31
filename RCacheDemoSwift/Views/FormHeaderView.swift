@@ -13,6 +13,8 @@ struct FormHeaderView: View {
     @Binding var storageType: StorageType
     
     let showAddKey: Bool
+    let showDataType: Bool
+    
     var sourceDataType: [DataType]
     var sourceKey: [KeyModel]
     var sourceStorageType: [StorageType]
@@ -27,6 +29,7 @@ struct FormHeaderView: View {
         key: Binding<KeyModel?> = .constant(nil),
         storageType: Binding<StorageType>,
         showAddKey: Bool = false,
+        showDataType: Bool = true,
         sourceDataType: [DataType],
         sourceKey: [KeyModel],
         sourceStorageType: [StorageType],
@@ -40,6 +43,8 @@ struct FormHeaderView: View {
         self._storageType = storageType
         
         self.showAddKey = showAddKey
+        self.showDataType = showDataType
+        
         self.sourceDataType = sourceDataType
         self.sourceKey = sourceKey
         self.sourceStorageType = sourceStorageType
@@ -52,18 +57,20 @@ struct FormHeaderView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack {
-                Text("Data Type:")
-                Spacer()
-                Picker("Data Type", selection: $dataType) {
-                    ForEach(sourceDataType, id: \.self) { type in
-                        Text(type.rawValue).tag(type)
+            if showDataType {
+                HStack {
+                    Text("Data Type:")
+                    Spacer()
+                    Picker("Data Type", selection: $dataType) {
+                        ForEach(sourceDataType, id: \.self) { type in
+                            Text(type.rawValue).tag(type)
+                        }
                     }
+                    .pickerStyle(.menu)
                 }
-                .pickerStyle(.menu)
-            }
-            .onChange(of: dataType) { _, __ in
-                dataTypeChanged?()
+                .onChange(of: dataType) { _, __ in
+                    dataTypeChanged?()
+                }
             }
             
             HStack(spacing: 12) {
