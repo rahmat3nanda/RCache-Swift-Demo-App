@@ -13,6 +13,7 @@ final class Router: ObservableObject {
         case key
         case save
         case read
+        case remove
     }
     
     @Published var navPath = NavigationPath()

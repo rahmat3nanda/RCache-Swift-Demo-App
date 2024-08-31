@@ -28,6 +28,10 @@ struct HomeView: View {
                 }
             })
             FloatingMenu(isMenuOpen: $isMenuOpen) {
+                ItemMenuView(imageName: "square.and.arrow.up.trianglebadge.exclamationmark", title: "Remove") {
+                    isMenuOpen = false
+                    router.navigate(to: .remove)
+                }
                 ItemMenuView(imageName: "square.and.arrow.up.fill", title: "Read") {
                     isMenuOpen = false
                     router.navigate(to: .read)
