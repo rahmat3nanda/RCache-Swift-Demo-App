@@ -11,18 +11,19 @@ import SwiftUI
 struct RCacheDemoApp: App {
     
     @ObservedObject var router = Router()
-    @StateObject var keyViewModel = KeyViewModel()
     
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $router.navPath) {
                 HomeView()
                     .navigationDestination(for: Router.Destination.self) { destination in
-                        destination.view()
+                        switch destination {
+                        case .key: KeyView()
+                        case .save: SaveView()
+                        }
                     }
             }
             .environmentObject(router)
-            .environmentObject(keyViewModel)
         }
     }
 }

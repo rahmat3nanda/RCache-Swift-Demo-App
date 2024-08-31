@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct KeyModel: Identifiable {
+struct KeyModel: Identifiable, Hashable {
     let id = UUID()
     let name: String
     

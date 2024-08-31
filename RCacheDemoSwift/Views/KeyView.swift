@@ -9,7 +9,7 @@ import SwiftUI
 
 struct KeyView: View {
     
-    @EnvironmentObject var viewModel: KeyViewModel
+    @StateObject private var viewModel = KeyViewModel()
     @State private var showAlert = false
     @State private var key: String = ""
     

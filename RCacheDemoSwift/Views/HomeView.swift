@@ -17,10 +17,14 @@ struct HomeView: View {
             VStack(content: {
                 Text("RCache")
             })
-            FloatingMenuView(isMenuOpen: $isMenuOpen) {
+            FloatingMenu(isMenuOpen: $isMenuOpen) {
                 ItemMenuView(imageName: "key.fill", title: "Key") {
                     isMenuOpen = false
                     router.navigate(to: .key)
+                }
+                ItemMenuView(imageName: "square.and.arrow.down.fill", title: "Save") {
+                    isMenuOpen = false
+                    router.navigate(to: .save)
                 }
             }
         }

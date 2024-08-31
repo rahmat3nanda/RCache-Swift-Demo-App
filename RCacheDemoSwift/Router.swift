@@ -9,14 +9,9 @@ import SwiftUI
 
 final class Router: ObservableObject {
     
-    public enum Destination: Codable, Hashable {
+    enum Destination: Codable, Hashable {
         case key
-        
-        func view() -> some View {
-            switch self {
-            case .key: KeyView()
-            }
-        }
+        case save
     }
     
     @Published var navPath = NavigationPath()
