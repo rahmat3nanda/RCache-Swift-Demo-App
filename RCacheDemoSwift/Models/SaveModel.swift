@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RCache
 
 enum DataType: String, CaseIterable {
     case data = "Data"
@@ -36,4 +37,11 @@ enum DataType: String, CaseIterable {
 enum StorageType: String, CaseIterable {
     case common = "General Data"
     case credentials = "Credentials Data"
+    
+    var rCache: RCaching {
+        switch self {
+        case .common: RCache.common
+        case .credentials: RCache.credentials
+        }
+    }
 }

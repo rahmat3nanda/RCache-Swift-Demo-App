@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RCache
 
 struct KeyModel: Identifiable, Hashable {
     let id = UUID()
@@ -13,5 +14,9 @@ struct KeyModel: Identifiable, Hashable {
     
     init(name: String) {
         self.name = name
+    }
+    
+    var rCacheKey: RCache.Key {
+        return .init(name)
     }
 }
