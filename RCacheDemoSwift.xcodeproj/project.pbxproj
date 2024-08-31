@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFE65F692C7DACFD00DE023E /* SaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE65F682C7DACFD00DE023E /* SaveView.swift */; };
+		AFE65FAC2C8194E700DE023E /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE65FAB2C8194E700DE023E /* RadioButton.swift */; };
+		AFE65FB02C82DB4C00DE023E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE65FAF2C82DB4C00DE023E /* Toast.swift */; };
+		AFE65FB22C82DC4E00DE023E /* SaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE65FB12C82DC4E00DE023E /* SaveViewModel.swift */; };
+		AFE65FB62C82E3C600DE023E /* SaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE65FB52C82E3C600DE023E /* SaveModel.swift */; };
 		AFF7CE6C2C7C886700AC12A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF7CE652C7C886600AC12A1 /* Preview Assets.xcassets */; };
 		AFF7CE6D2C7C886700AC12A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF7CE672C7C886600AC12A1 /* Assets.xcassets */; };
 		AFF7CE6E2C7C886700AC12A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE682C7C886600AC12A1 /* HomeView.swift */; };
 		AFF7CE6F2C7C886700AC12A1 /* RCacheDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE692C7C886600AC12A1 /* RCacheDemoApp.swift */; };
 		AFF7CE712C7C918700AC12A1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE702C7C918700AC12A1 /* Router.swift */; };
-		AFF7CE752C7C975A00AC12A1 /* FloatingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE742C7C975A00AC12A1 /* FloatingMenuView.swift */; };
+		AFF7CE752C7C975A00AC12A1 /* FloatingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE742C7C975A00AC12A1 /* FloatingMenu.swift */; };
 		AFF7CE7F2C7CA25100AC12A1 /* KeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE7E2C7CA25100AC12A1 /* KeyView.swift */; };
 		AFF7CE832C7CA85F00AC12A1 /* RCache in Frameworks */ = {isa = PBXBuildFile; productRef = AFF7CE822C7CA85F00AC12A1 /* RCache */; };
 		AFF7CE852C7CA88A00AC12A1 /* RCache+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7CE842C7CA88A00AC12A1 /* RCache+Key.swift */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AFE65F682C7DACFD00DE023E /* SaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveView.swift; sourceTree = "<group>"; };
+		AFE65FAB2C8194E700DE023E /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		AFE65FAF2C82DB4C00DE023E /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		AFE65FB12C82DC4E00DE023E /* SaveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewModel.swift; sourceTree = "<group>"; };
+		AFE65FB52C82E3C600DE023E /* SaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveModel.swift; sourceTree = "<group>"; };
 		AFF7CE532C7C864B00AC12A1 /* RCache Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RCache Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF7CE652C7C886600AC12A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFF7CE672C7C886600AC12A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,7 +38,7 @@
 		AFF7CE692C7C886600AC12A1 /* RCacheDemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCacheDemoApp.swift; sourceTree = "<group>"; };
 		AFF7CE6A2C7C886600AC12A1 /* RCacheDemoSwift.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = RCacheDemoSwift.entitlements; sourceTree = "<group>"; };
 		AFF7CE702C7C918700AC12A1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		AFF7CE742C7C975A00AC12A1 /* FloatingMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingMenuView.swift; sourceTree = "<group>"; };
+		AFF7CE742C7C975A00AC12A1 /* FloatingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingMenu.swift; sourceTree = "<group>"; };
 		AFF7CE7E2C7CA25100AC12A1 /* KeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyView.swift; sourceTree = "<group>"; };
 		AFF7CE842C7CA88A00AC12A1 /* RCache+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RCache+Key.swift"; sourceTree = "<group>"; };
 		AFF7CE872C7CAB8A00AC12A1 /* KeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyModel.swift; sourceTree = "<group>"; };
@@ -47,6 +57,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFE65FAA2C8194BA00DE023E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AFF7CE742C7C975A00AC12A1 /* FloatingMenu.swift */,
+				AFE65FAB2C8194E700DE023E /* RadioButton.swift */,
+				AFE65FAF2C82DB4C00DE023E /* Toast.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		AFF7CE4A2C7C864B00AC12A1 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +94,7 @@
 		AFF7CE6B2C7C886600AC12A1 /* RCacheDemoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AFE65FAA2C8194BA00DE023E /* Utils */,
 				AFF7CE862C7CAB8000AC12A1 /* Models */,
 				AFF7CE802C7CA2B600AC12A1 /* Views */,
 				AFF7CE892C7CABC000AC12A1 /* ViewModels */,
@@ -92,7 +113,7 @@
 			children = (
 				AFF7CE682C7C886600AC12A1 /* HomeView.swift */,
 				AFF7CE7E2C7CA25100AC12A1 /* KeyView.swift */,
-				AFF7CE742C7C975A00AC12A1 /* FloatingMenuView.swift */,
+				AFE65F682C7DACFD00DE023E /* SaveView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				AFF7CE872C7CAB8A00AC12A1 /* KeyModel.swift */,
+				AFE65FB52C82E3C600DE023E /* SaveModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				AFF7CE8A2C7CABDD00AC12A1 /* KeyViewModel.swift */,
+				AFE65FB12C82DC4E00DE023E /* SaveViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -189,14 +212,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE65FB02C82DB4C00DE023E /* Toast.swift in Sources */,
 				AFF7CE6F2C7C886700AC12A1 /* RCacheDemoApp.swift in Sources */,
 				AFF7CE852C7CA88A00AC12A1 /* RCache+Key.swift in Sources */,
+				AFE65FB22C82DC4E00DE023E /* SaveViewModel.swift in Sources */,
 				AFF7CE8B2C7CABDD00AC12A1 /* KeyViewModel.swift in Sources */,
+				AFE65FAC2C8194E700DE023E /* RadioButton.swift in Sources */,
 				AFF7CE882C7CAB8A00AC12A1 /* KeyModel.swift in Sources */,
 				AFF7CE7F2C7CA25100AC12A1 /* KeyView.swift in Sources */,
 				AFF7CE712C7C918700AC12A1 /* Router.swift in Sources */,
+				AFE65F692C7DACFD00DE023E /* SaveView.swift in Sources */,
 				AFF7CE6E2C7C886700AC12A1 /* HomeView.swift in Sources */,
-				AFF7CE752C7C975A00AC12A1 /* FloatingMenuView.swift in Sources */,
+				AFF7CE752C7C975A00AC12A1 /* FloatingMenu.swift in Sources */,
+				AFE65FB62C82E3C600DE023E /* SaveModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
