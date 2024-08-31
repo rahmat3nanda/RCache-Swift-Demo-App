@@ -1,5 +1,5 @@
 //
-//  FloatingMenuView.swift
+//  FloatingMenu.swift
 //  RCacheDemoSwift
 //
 //  Created by Rahmat Trinanda Pramudya Amar on 26/08/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FloatingMenuView<Content: View>: View {
+struct FloatingMenu<Content: View>: View {
     
     @Binding var isMenuOpen: Bool
     let content: Content
@@ -68,7 +68,7 @@ struct FloatingMenuView<Content: View>: View {
 
 #Preview {
     VStack {
-        FloatingMenuView {
+        FloatingMenu {
             ForEach(0..<3) { i in
                 Text("Test \(i + 1)")}
         }
