@@ -14,6 +14,7 @@ enum LogActionType: String {
     case save = "Save"
     case read = "Read"
     case remove = "Remove"
+    case clear = "Clear"
 }
 
 struct LogModel: Codable {

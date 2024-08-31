@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ClearType: String {
+enum ClearType: String, CaseIterable {
     case common = "All General Data"
     case credentials = "All Credentials Data"
     case all = "All Data"
