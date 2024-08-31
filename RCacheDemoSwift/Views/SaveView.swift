@@ -15,7 +15,7 @@ struct SaveView: View {
     @StateObject private var keyViewModel = KeyViewModel()
     
     @State private var selectedDataType: DataType = .data
-    @State private var selectedKey: KeyModel = .init(name: "")
+    @State private var selectedKey: KeyModel? = nil
     @State private var selectedSaveType: StorageType = .common
     
     @State private var fieldValue = ""
@@ -47,7 +47,7 @@ struct SaveView: View {
                 Spacer()
                 Picker("Key", selection: $selectedKey) {
                     ForEach(keyViewModel.items, id: \.id) { item in
-                        Text(item.name).tag(item)
+                        Text(item.name).tag(item as KeyModel?)
                     }
                 }
                 Image(systemName: "plus").onTapGesture {
@@ -107,15 +107,16 @@ struct SaveView: View {
         .toastView(toast: $toast)
         .onAppear(perform: {
             keyViewModel.loadItems()
+            selectedKey = keyViewModel.items.first
         })
     }
     
     func check() {
-        buttonEnabled = !fieldValue.isEmpty
+        buttonEnabled = !fieldValue.isEmpty && selectedKey != nil
     }
     
     func submit() {
-        saveViewModel.save(dataType: selectedDataType, key: selectedKey, storageType: selectedSaveType, value: fieldValue) { (success, message) in
+        saveViewModel.save(dataType: selectedDataType, key: selectedKey!, storageType: selectedSaveType, value: fieldValue) { (success, message) in
             if success {
                 toast = Toast(style: .success, message: "Success Saving")
                 fieldValue = ""
