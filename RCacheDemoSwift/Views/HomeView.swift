@@ -12,10 +12,20 @@ struct HomeView: View {
     @EnvironmentObject var router: Router
     @State var isMenuOpen = false
     
+    @State var logs: [LogIdentifiableModel]? = nil
+    
     var body: some View {
         ZStack {
             VStack(content: {
-                Text("RCache")
+                if logs?.isEmpty ?? true {
+                    Text("RCache")
+                } else {
+                    List {
+                        ForEach(logs!.reversed()) { log in
+                            Text("Date: \(log.time)\nAction: \(log.action)\nType: \(log.input)\nValue: \(log.value)")
+                        }
+                    }
+                }
             })
             FloatingMenu(isMenuOpen: $isMenuOpen) {
                 ItemMenuView(imageName: "key.fill", title: "Key") {
@@ -30,6 +40,9 @@ struct HomeView: View {
         }
         .navigationBarTitle("RCache")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear(perform: {
+            logs = LogManager.instance.data()?.toIdentifible()
+        })
     }
 }
 

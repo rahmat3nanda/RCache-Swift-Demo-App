@@ -20,19 +20,13 @@ class KeyViewModel: ObservableObject {
     func append(_ item: KeyModel) {
         items.append(item)
         RCache.common.save(array: items.map({ $0.name }), key: .savedKeys)
-    }
-    
-    func append(contentsOf: [KeyModel]) {
-        items.append(contentsOf: contentsOf)
-        RCache.common.save(array: items.map({ $0.name }), key: .savedKeys)
-    }
-    
-    func setItems(_ data: [KeyModel]) {
-        items = data
-        RCache.common.save(array: items.map({ $0.name }), key: .savedKeys)
+        LogManager.instance.add(action: .add, input: .key, value: item.name)
     }
     
     func deleteItems(at offsets: IndexSet) {
+        offsets.forEach { i in
+            LogManager.instance.add(action: .remove, input: .key, value: items[i].name)
+        }
         items.remove(atOffsets: offsets)
         RCache.common.save(array: items.map({ $0.name }), key: .savedKeys)
     }
