@@ -22,6 +22,7 @@ struct RCacheDemoApp: App {
                         case .save: SaveView()
                         case .read: ReadView()
                         case .remove: RemoveView()
+                        case .clear: ClearView()
                         }
                     }
             }

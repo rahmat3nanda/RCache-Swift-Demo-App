@@ -14,6 +14,7 @@ final class Router: ObservableObject {
         case save
         case read
         case remove
+        case clear
     }
     
     @Published var navPath = NavigationPath()
