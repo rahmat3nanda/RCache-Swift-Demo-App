@@ -21,6 +21,7 @@ class SaveViewModel: ObservableObject {
             }
         case .string:
             storageType.rCache.save(string: value, key: key.rCacheKey)
+            completion(true, nil)
             addToLog(dataType: dataType, key: key, storageType: storageType, value: value)
         case .bool:
             if let bool = value.boolValue() {
