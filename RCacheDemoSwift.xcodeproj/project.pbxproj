@@ -488,7 +488,7 @@
 			repositoryURL = "https://github.com/rahmat3nanda/RCache-Swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
+				minimumVersion = 1.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
